@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8e4;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.all {
+    width: 30%;
+    margin: auto;
+    background-color: rgb(38, 37, 37);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.profile-picture {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.location {
+    color: rgb(92, 187, 92);
+}
+
+.description {
+    color: rgb(166, 164, 164);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(71, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media(max-width:370px) {
+    .all {
+        width: 100%;
+        padding: 0;
+        padding: 20px;
+    }
+
+    .profile-picture {
+        height: 100px;
+        border-radius: 50%;
+    }
+
+
+}
