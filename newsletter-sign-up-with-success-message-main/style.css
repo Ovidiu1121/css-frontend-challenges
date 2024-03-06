@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(39, 39, 61);
+}
+
+input,
+label {
+    display: block;
+}
+
+.grid-container {
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 100px;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "header aside"
+        "main aside"
+        "footer aside";
+
+    padding: 20px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+}
+
+.header-container {
+    grid-area: header;
+}
+
+.main-container {
+    grid-area: main;
+}
+
+.footer-container {
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.aside-container {
+    grid-area: aside;
+
+}
+
+.aside-image {
+    height: 100%;
+    width: 100%;
+}
+
+.left-item {
+    width: 80%;
+    margin: auto;
+}
+
+.header-title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-footer,
+.message-button {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.email-txtbox {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(229, 229, 229);
+}
+
+.card-info {
+    margin: 5px;
+}
+
+.description {
+    margin: 0 0 30px 0;
+}
+
+.all {
+    width: 20%;
+    margin: auto;
+    margin-top: 100px;
+
+    padding: 30px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+}
+
+.success-icon {
+    height: 40px;
+}
+
+.message-title {
+    font-size: 2.5em;
+}
+
+span {
+    font-weight: bold;
+}
+
+.button-footer:hover,
+.message-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.error-message {
+    display: none;
+    color: red;
+}
