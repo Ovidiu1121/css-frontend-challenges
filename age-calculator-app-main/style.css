@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+label,
+input {
+    display: block;
+    color: rgb(167, 167, 167);
+}
+
+.all {
+    height: 70%;
+    width: 40%;
+    margin: auto;
+    background-color: #FFF;
+    margin-top: 100px;
+    border-radius: 15px 15px 100px 15px;
+    padding: 40px;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.mid {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+.down {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.lines {
+    color: rgb(109, 46, 169);
+}
+
+input {
+    padding: 10px;
+    width: 140px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 8px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.8em;
+}
